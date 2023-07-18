@@ -1,5 +1,23 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Setup .env variables
+
+```bash
+
+DATABASE_URL=
+
+NEXTAUTH_URL='http://localhost:3000/'
+NEXTAUTH_URL_INTERNAL='http://localhost:3000/'
+NEXTAUTH_SECRET=
+
+GITHUB_CLIENTID=
+GITHUB_SECRET=
+
+GOOGLE_CLIENTID=
+GOOGLE_SECRET=
+
+```
+
 ## Getting Started
 
 First, run the development server:
