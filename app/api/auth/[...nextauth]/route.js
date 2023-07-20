@@ -13,7 +13,6 @@ export const authOptions = {
     GithubProvider({
       clientId: process.env.GITHUB_CLIENTID,
       clientSecret: process.env.GITHUB_SECRET,
-      scope: "read:user",
     }),
     //Google Provider
     GoogleProvider({
