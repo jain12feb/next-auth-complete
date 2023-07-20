@@ -25,7 +25,8 @@ const Login = () => {
   const LoginByCrendtials = (e) => {
     e.preventDefault();
     // if (userData.email && userData.password) {
-    signIn("credentials", { ...userData, redirect: false }).then((callback) => {
+
+    signIn("credentials", { redirect: false, ...userData }).then((callback) => {
       if (callback?.error) {
         toast.error(callback.error);
       }
