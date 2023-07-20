@@ -89,10 +89,13 @@ export const authOptions = {
 
       return session;
     },
+    authorized({ req, token }) {
+      if (token) return true; // If there is a token, the user is authenticated
+    },
   },
-  pages: {
-    signIn: "/login",
-  },
+  // pages: {
+  //   signIn: "/login",
+  // },
   secret: process.env.NEXTAUTH_SECRET,
   session: {
     strategy: "jwt",
